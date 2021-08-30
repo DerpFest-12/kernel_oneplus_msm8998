@@ -41,6 +41,7 @@ obj-$(CONFIG_BINFMT_ELF)	+= binfmt_elf.o
 obj-$(CONFIG_COMPAT_BINFMT_ELF)	+= compat_binfmt_elf.o
 obj-$(CONFIG_BINFMT_ELF_FDPIC)	+= binfmt_elf_fdpic.o
 obj-$(CONFIG_BINFMT_FLAT)	+= binfmt_flat.o
+obj-$(CONFIG_FILE_MAP)		+= file_map.o
 
 obj-$(CONFIG_FS_MBCACHE)	+= mbcache.o mbcache2.o
 obj-$(CONFIG_FS_POSIX_ACL)	+= posix_acl.o
@@ -128,5 +129,6 @@ obj-y				+= exofs/ # Multiple modules
 obj-$(CONFIG_CEPH_FS)		+= ceph/
 obj-$(CONFIG_PSTORE)		+= pstore/
 obj-$(CONFIG_EFIVAR_FS)		+= efivarfs/
+obj-$(CONFIG_EROFS_FS)		+= erofs/
 # liochen@filesystem, 2016/12/03, Support NTFS and EXFAT in kernel
 obj-$(CONFIG_EXFAT_FS)		+= exfat/
